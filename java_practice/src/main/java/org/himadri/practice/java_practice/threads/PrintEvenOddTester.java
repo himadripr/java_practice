@@ -1,4 +1,4 @@
-package org.himadri.practice.java_practice.java_examples;
+package org.himadri.practice.java_practice.threads;
 public class PrintEvenOddTester {
 
     public static void main(String... args) {
