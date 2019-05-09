@@ -7,18 +7,20 @@ public class Powerlogn {
 	
 	public static int powerloop(int x, int y){
 		int res = 1;     // Initialize result 
-		   
+		int mod = 10000007;
+		//mod is necessary for large numbers.
+		x = x%mod;
 	    while (y > 0) 
 	    { 
 	        // If y is odd, multiply x with result 
 	        if ((y & 1) == 1)
-	            res = res*x; 
+	            res = (res*x)%mod; 
 	   
 	        // n must be even now 
 	        y = y>>1; // y = y/2 
 	        if (y>0){
 	        	//to avoid unnecessary multiplication.
-	        	x = x*x;  // Change x to x^2 
+	        	x = (x*x)%mod;  // Change x to x^2 
 	        }
 	        
 	    } 
