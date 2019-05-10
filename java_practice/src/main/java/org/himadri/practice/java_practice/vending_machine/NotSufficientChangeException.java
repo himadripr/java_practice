@@ -1,4 +1,5 @@
 package org.himadri.practice.java_practice.vending_machine;
+
 public class NotSufficientChangeException extends RuntimeException {
     private String message;
    

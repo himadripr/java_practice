@@ -30,6 +30,7 @@ public class DeadLockExample {
         // Thread-2
         Runnable block2 = new Runnable() {
             public void run() {
+            	//to avoid deadlock we can reorder the resources
                 synchronized (b) {
                     // Thread-2 have B but need A also
                     synchronized (a) {
