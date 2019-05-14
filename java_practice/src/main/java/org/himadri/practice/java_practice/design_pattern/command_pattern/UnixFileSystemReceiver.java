@@ -1,0 +1,19 @@
+package org.himadri.practice.java_practice.design_pattern.command_pattern;
+public class UnixFileSystemReceiver implements FileSystemReceiver {
+
+	@Override
+	public void openFile() {
+		System.out.println("Opening file in unix OS");
+	}
+
+	@Override
+	public void writeFile() {
+		System.out.println("Writing file in unix OS");
+	}
+
+	@Override
+	public void closeFile() {
+		System.out.println("Closing file in unix OS");
+	}
+
+}
