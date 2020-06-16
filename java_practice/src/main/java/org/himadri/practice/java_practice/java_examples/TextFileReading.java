@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 public class TextFileReading {
 	public static void main(String[] args) {
-		String fileName = "//Users//abhishek//Documents//transbit//CuttingPlanSimulator//cutting.txt";
+		String fileName = "//Users//abhishek//Documents//transbit//test//test.txt";
 		String data = null; 
 	    try {
 			data = new String(Files.readAllBytes(Paths.get(fileName)));
